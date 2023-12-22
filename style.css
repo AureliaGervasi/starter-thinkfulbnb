@@ -92,7 +92,7 @@ form div label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 120px;
 }
 
 form button {
@@ -130,23 +130,41 @@ footer p {
     padding-top: 0;
   }
 
+  form button {
+    width: unset;
+  }
+
   header nav {
     margin-top: 10px;
   }
 
   form {
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
   }
 
   form div {
+    display: flex;
     flex-direction: column;
-    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100px;
    }
+
+   form .select {
+    width: 100%;
+  }
 
   form label {
     padding: 5px;
+  }
+
+  form button {
+    display: flex;
+    justify-content: flex-end;
   }
 
   section.alternate-background {
